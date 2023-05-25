@@ -1,38 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
 .App {
   text-align: center;
+  font-family: 'Source Sans Pro', sans-serif; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+nav{
+  z-index: 100;
+  position: fixed;
+  background-color: #F9F5EB;
+  width: 100%;
+  height: 40px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  justify-content: space-between;
+
+}
+.nav-elements a{
+  color: #002B5B;
+  margin-left: 20px;
+}
+nav button{
+  height: 25px;
+  background: transparent;
+  color: black;
+  border: 2px solid black;
+  border-radius:8px;
+  font-size: 1em;
+  padding-right:5px;
+  cursor: crosshair;
 }
 
-.App-link {
-  color: #61dafb;
+.logo{
+  height: 15px;
+  font-weight: 900;
+  color: #002B5B;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cards{
+  position:absolute;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin-top: 45px;
+
+}
+.card{
+  height:auto;
+  padding: 15px;
+
+}
+.about{
+  position: absolute;
+  margin: 40px;
+}
+.logo-car{
+  width: 200px;
 }
